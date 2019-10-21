@@ -22,7 +22,7 @@ public class ProjectnzntImpl {
         method = RequestMethod.GET)
     public String helloworld( @RequestParam(value = "name", required = true) String name){
 
-        return userProjectnzntDelegate.helloworld(name);
+        return userProjectnzntDelegate.helloworld("Hi, " + name);
     }
 
 }
